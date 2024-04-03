@@ -21,19 +21,36 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-md-6 mb-3">
-            <label for="password">Senha: <span> (Obrigátorio)</span> </label>
-            <input type="password" placeholder="Escolha uma senha" id="password" name="senha" class="form-control" required>
-        </div>
-        <div class="col-md-3 mb-3">
-            <label for="tel-1">Telefone:</label>
+    <div class="col-md-6 mb-3">
+        <label for="password">Senha: <span> (Obrigatório)</span> </label>
+        <input type="password" placeholder="Escolha uma senha" id="password" name="senha" class="form-control" required>
+    </div>
+    <div class="col-md-3 mb-3">
+        <label for="tel-1">Telefone:</label>
+        <div class="input-group">
             <input type="tel" placeholder="Digite seu telefone" id="tel-1" name="tel-1" class="form-control">
-        </div>
-        <div class="col-md-3 mb-3">
-            <label for="tel-2">Telefone 2: (Opcional)</label>
-            <input type="tel" placeholder="Digite seu telefone" id="tel-2" name="tel-2" class="form-control">
+            <div class="input-group-append">
+                <span class="input-group-text">
+                    <i class="bi bi-whatsapp"></i>
+                </span>
+                <input type="checkbox" id="verificacao1" name="verificacao1" class="form-control-checkbox ml-2">
+            </div>
         </div>
     </div>
+    <div class="col-md-3 mb-3">
+        <label for="tel-2">Telefone Alternativo: (Opcional)</label>
+        <div class="input-group">
+            <input type="tel" placeholder="Digite seu telefone" id="tel-2" name="tel-2" class="form-control">
+            <div class="input-group-append">
+                <span class="input-group-text">
+                    <i class="bi bi-whatsapp"></i>
+                </span>
+                <input type="checkbox" id="verificacao2" name="verificacao2" class="form-control-checkbox ml-2">
+            </div>
+        </div>
+    </div>
+</div>
+
     <div class="alert alert-danger d-flex align-items-center" role="alert">
         <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Danger:"><use xlink:href="#exclamation-triangle-fill"/></svg>
         <div>
