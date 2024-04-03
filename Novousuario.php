@@ -1,4 +1,4 @@
-<h1>Novo Usuário</h1>
+<h1 class="text-center">Novo Usuário</h1>
 
 <form action="?page=salvar" method="POST">
     <input type="hidden" name="acao" value="cadastrar">
@@ -22,8 +22,16 @@
     </div>
     <div class="row">
         <div class="col-md-6 mb-3">
-            <label for="password">Senha:</label>
+            <label for="password">Senha: </label>
             <input type="password" placeholder="Escolha uma senha" id="password" name="senha" class="form-control">
+        </div>
+        <div class="col-md-3 mb-3">
+            <label for="tel-1">Telefone:</label>
+            <input type="tel" placeholder="Escolha uma senha" id="tel-1" name="tel-1" class="form-control">
+        </div>
+        <div class="col-md-3 mb-3">
+            <label for="tel-2">Telefone 2:</label>
+            <input type="tel" placeholder="Escolha uma senha" id="tel-2" name="tel-2" class="form-control">
         </div>
     </div>
     <div class="alert alert-danger d-flex align-items-center" role="alert">

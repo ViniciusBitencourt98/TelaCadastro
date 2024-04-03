@@ -1,4 +1,4 @@
-<h1>Editar Usuário</h1>
+<h1 class="text-center">Editar Usuário</h1>
 
 <?php
     $consulta_banco = "SELECT * FROM usuarios WHERE id=".$_REQUEST["id"];
