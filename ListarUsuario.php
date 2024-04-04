@@ -1,4 +1,4 @@
-<h1 class="text-center">Listar Usuário</h1>
+<h1 class="text-center" id="listar">Listar Usuário</h1>
 <?php
     $consulta_sql = "SELECT * FROM usuarios";
     
@@ -7,21 +7,23 @@
     $quantidade = $resultado->num_rows;
 
     if($quantidade > 0 ){
-        echo "<table class='table table-hover table-striped table-bordered'>";
+        echo "<table class='table table-hover table-striped table-bordered container text-center'>";
             echo "<tr>";
             echo "<th>ID </th>";
             echo "<th>Nome </th>";
             echo "<th>E-mail </th>";
             echo "<th>Data de nascimento </th>";
+            echo "<th>Telefone </th>";
             echo "<th>Ações</th>";
         while($linha = $resultado->fetch_object()){
             echo "<tr>";
             echo "<td>".$linha->id."</td>";
             echo "<td>".$linha->nome."</td>";
             echo "<td>".$linha->email."</td>";
+            echo "<td>" ."</td>";
             echo "<td>".$linha->data_nascimento."</td>";
-            echo "<td>
-                    <button onclick=\"location.href='?page=editar&id=".$linha->id."';\" class='btn btn-success'> Editar </button>
+            echo "<td >
+                    <button onclick=\"location.href='?page=editar&id=".$linha->id."';\" class='btn btn-success mr-3'> Editar </button>
                     
                     <button onclick=\"if(confirm('Tem certeza que deseja excluir ?')){location.href='?page=salvar&acao=excluir&id=" .$linha->id. "';}else{false;}\"class='btn btn-danger'> Excluir </button> 
                   </td>";

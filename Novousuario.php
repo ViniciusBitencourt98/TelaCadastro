@@ -27,31 +27,33 @@
         <input type="password" placeholder="Escolha uma senha" id="password" name="senha" class="form-control" required>
     </div>
     <div class="col-md-3 mb-3">
-        <label for="tel-1">Telefone:</label>
-        <div class="input-group">
-            <input type="tel" placeholder="Digite seu telefone" id="tel-1" name="tel-1" class="form-control">
-            <div class="input-group-append">
-                <span class="input-group-text">
-                    <i class="bi bi-whatsapp"></i>
-                </span>
-                <input type="checkbox" id="verificacao1" name="verificacao1" class="form-control-checkbox ml-2">
-            </div>
-        </div>
+    <label for="tel-1">Telefone:</label>
+    <div class="input-group">
+        <input type="tel" placeholder="Digite seu telefone" id="tel-1" name="tel-1" class="form-control">
     </div>
-    <div class="col-md-3 mb-3">
-        <label for="tel-2">Telefone Alternativo: <span class="texto-menor">(Opcional)</span></label>
-        <div class="input-group">
-            <input type="tel" placeholder="Digite seu telefone" id="tel-2" name="tel-2" class="form-control">
-            <div class="input-group-append">
-                <span class="input-group-text">
-                    <i class="bi bi-whatsapp"></i>
-                </span>
-                <input type="checkbox" id="verificacao2" name="verificacao2" class="form-control-checkbox ml-2">
-            </div>
-        </div>
+    <div class="input-group mt-2">
+        <span class="input-group-text">
+            <i class="bi bi-whatsapp"></i>
+        </span>
+        <input type="checkbox" id="verificacao1" name="verificacao1" class="form-control-checkbox ml-2 mr-2">
+        <span class="texto-menor">(Marque, se WhatsApp)</span>
     </div>
 </div>
-    <div class="mx-auto">
-        <button type="submit" class="btn btn-outline-success">Cadastrar</button>
+<div class="col-md-3 mb-3">
+    <label for="tel-2">Telefone Alternativo: <span class="texto-menor">(Opcional)</span></label>
+    <div class="input-group">
+        <input type="tel" placeholder="Digite seu telefone" id="tel-2" name="tel-2" class="form-control">
+    </div>
+    <div class="input-group mt-2">
+        <span class="input-group-text">
+            <i class="bi bi-whatsapp"></i>
+        </span>
+        <input type="checkbox" id="verificacao2" name="verificacao2" class="form-control-checkbox ml-2 mr-2">
+        <span class="texto-menor">(Marque, se WhatsApp)</span>
+    </div>
+</div>
+</div>
+    <div class="mx-auto text-center">
+        <button type="submit" class="btn btn-outline-primary btn-lg">Cadastrar</button>
     </div>
 </form>
