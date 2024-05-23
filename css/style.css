@@ -1,21 +1,97 @@
-.texto-menor{
-    font-size: 11px;
-    color: red;
-    font-family: sans-serif, Arial, Helvetica;
+body{
+    margin: 0;
+    background-color: #E6E6FA;
+    font-family: arial;
 }
-input{
-    font-family:  sans-serif;
-    font-size: 15px;
+.navbar{
+    display: flex;
+    justify-content: flex-start;
+    height: 30px;
+    background-color: #c8dbf3;
+    gap: 30px;
 }
-h1{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 25px;
-    margin: 10px;
+.nav-link{
+    border: 0;
+    padding-inline: 15px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    background-color: rgb(135, 135, 206);
+    color: #000;
+    border-radius: 3px;
+    border: 1px solid #000;
+}
+.nav-link:hover{
+    background-color: rgb(85, 85, 156);
+}
+.titulo-home{
+    text-align: center;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.titulo{
+    display: flex;
+    flex-wrap: nowrap;
+    font-size: 35px;
+    color: rgb(68, 68, 190);
+    width: 400px;
+    background-color: #c8dbf3;
+    border-radius: 10px;
+    box-shadow: 0 10px 8px rgba(146, 15, 15, 0.1);
+}
+.menu{
+    display: flex;
+    height: 450px;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.menu-1{
+    
+    height: 250px;
+    width: 300px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #c8dbf3;
     
 }
-#listar{
-        margin-bottom: 30px;
+.menu-1:hover{
+    box-shadow: 50px 20px 20px rgba(245, 4, 4, 0.1);
 }
-th{
-    container: text-center;
+.menu-1 h1{
+    font-size: 20px;
+    font-family: arial;
+    
+}
+.menu-logo{
+
+    height: 60px;
+    display: flex;
+    text-align: start;
+}
+.menu-1 p{
+    font-family: 'arial';
+    font-size: 17px;
+    height: 85px;
+    text-align:left;
+    margin: 6px;
+}
+.menu-1 a{
+    text-decoration: none;
+    padding: 5px;
+    margin: 8px;
+    border-radius: 4px;
+    background-color: rgb(135, 135, 206);
+    color: #000;
+    font-family: 'arial';
+    font-size: 19px;
+}
+.menu-1 a:hover{
+    background-color: rgb(85, 85, 156);
+}
+.area-botao{
+    height: 40px;
+    padding-top: 10px;
 }
