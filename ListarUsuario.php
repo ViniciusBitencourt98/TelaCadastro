@@ -1,4 +1,10 @@
-<h1 class="text-center" id="listar">Listar Usuário</h1>
+<div class= "titulo-page">
+    <div class = "titulo-page-logo">
+    <a href="?page=index.php">Home</br><img src="image/botao-home.png" alt="Icone de ir para home"></a>
+    <a href="?page=novo">Novo usuario</br><img src="image/logo-add.png" alt="Icone de adicionar novos usuarios"></a> 
+    </div>
+    <h1>Listar Usuário</h1>
+</div>
 <?php
     $consulta_sql = "SELECT * FROM usuarios";
     
@@ -13,15 +19,15 @@
             echo "<th>Nome </th>";
             echo "<th>E-mail </th>";
             echo "<th>Data de nascimento </th>";
-            echo "<th>Telefone </th>";
+            echo "<th>Telefones </th>";
             echo "<th>Ações</th>";
         while($linha = $resultado->fetch_object()){
             echo "<tr>";
             echo "<td>".$linha->id."</td>";
             echo "<td>".$linha->nome."</td>";
             echo "<td>".$linha->email."</td>";
-            echo "<td>" ."</td>";
             echo "<td>".$linha->data_nascimento."</td>";
+            echo "<td>"."</td>";
             echo "<td >
                     <button onclick=\"location.href='?page=editar&id=".$linha->id."';\" class='btn btn-success mr-3'> Editar </button>
                     

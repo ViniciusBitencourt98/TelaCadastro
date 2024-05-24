@@ -9,7 +9,7 @@
   </head>
   <body>
   <nav class="titulo-home">
-        <h1 class="titulo">Tela inicial do sistema</h1>
+        <h1 class="titulo">Sistema de cadastro</h1>
   </nav> 
       <?php
       include("config.php");

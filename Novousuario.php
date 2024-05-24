@@ -1,12 +1,25 @@
-<h1 class="text-center">Novo Usuário</h1>
-
+<div class= "titulo-page">
+    <div class = "titulo-page-logo">
+    <a href="?page=index.php">Home</br><img src="image/botao-home.png" alt="Icone de ir para home"></a>
+    <a href="?page=listar">Listar</br><img src="image/listar.png" alt="Icone de listar usuários"></a> 
+    </div>
+    <h1>Novo Usuário</h1>
+</div>
 <form action="?page=salvar" method="POST" class="form">
     <input type="hidden" name="acao" value="cadastrar">
+   <div class="form">
+    <fieldset class = "form1">
+        <legend>Dados pessoais</legend>
     <div class="mb-3">
-        <label for="nome">Nome:<span class="texto-menor"> (Obrigátorio)</span></label>
-        <input type="text" placeholder="Digite seu nome completo" id="nome" name="nome" class="form-control" required>
+       <div>
+            <label for="nome">Nome:<span class="texto-menor"> (Obrigátorio)</span></label>
+            <input type="text" placeholder="Digite seu nome completo" id="nome" name="nome" class="form-control" required>
+        </div>
+        <div class="col-md-4">    
+            <label for="data_nascimento">Data de nascimento: <span class="texto-menor"> (Obrigátorio)</span></label>
+            <input type="date" id="data_nascimento" name="data_nascimento" class="form-control" required>
+        </div>
     </div>
-
     <div class="row">
         <div class="col-md-12 mb-3">
             <div class="row g-3">
@@ -14,10 +27,7 @@
                     <label for="email">E-mail:</label>
                     <input type="email" placeholder="Digite seu e-mail" id="email" name="email" class="form-control">        
                 </div>
-                <div class="col-md-4">
-                    <label for="data_nascimento">Data de nascimento: <span class="texto-menor"> (Obrigátorio)</span></label>
-                    <input type="date" id="data_nascimento" name="data_nascimento" class="form-control" required>
-                </div>
+                
             </div>
         </div>
     </div>
@@ -52,6 +62,8 @@
         <span class="texto-menor">(Marque, se WhatsApp)</span>
     </div>
 </div>
+</div>
+</fieldset>
 </div>
     <div class="mx-auto text-center">
         <button type="submit" class="btn btn-outline-primary btn-lg">Cadastrar</button>
