@@ -11,42 +11,78 @@
         <fieldset class = "form1">
             <legend>Dados pessoais</legend>
             <div class="form-pl">
-                <div>
-                    <label for="nome">Nome:<span class="texto-menor">(Obrigátorio)</span></label></br>
-                    <input type="text" placeholder="Digite seu nome completo" id="nome" name="nome" class="form-control" required>
+                <div class="form-control wrap-input-5">
+                    <label for="nome">Nome:<span class="texto-menor">(Obrigátorio)</span></label>
+                    <input  type="text" placeholder="Digite seu nome completo" id="nome" name="nome" required>
                 </div>
             </div>
-            <div class="form-pl">    
-                <div>
-                    <label for="data_nascimento">Data de nascimento: <span class="texto-menor"> (Obrigátorio)</span></label></br>
+            <div class="form-sl">    
+                <div class="form-control">
+                    <label for="tel-1">Telefone:</label>
+                    <input type="tel" placeholder="Digite seu telefone" id="tel-1" name="tel-1">
+                    <div>
+                        <input type="checkbox" id="verificacao1" name="verificacao1">
+                        <span class="">(Marque, se WhatsApp)</span>
+                    </div>    
+                </div>
+                <div class="form-control">
+                    <label for="tel-2">Telefone Alternativo: <span class="texto-menor">(Opcional)</span></label>
+                    <input type="tel" placeholder="Digite seu telefone" id="tel-2" name="tel-2">
+                    <div>
+                        <input type="checkbox" id="verificacao2" name="verificacao2">
+                        <span class="texto-menor">(Marque, se WhatsApp)</span>
+                    </div>
+                </div>
+                <div class="form-control">
+                    <label for="data_nascimento">Data de nascimento: <span class="texto-menor"> (Obrigátorio)</span></label>
                     <input type="date" id="data_nascimento" name="data_nascimento" required>
                 </div>
-                <div>
-                    <label for="tel-1">Telefone:</label></br>
-                    <input type="tel" placeholder="Digite seu telefone" id="tel-1" name="tel-1"></br>
-                    <input type="checkbox" id="verificacao1" name="verificacao1">
-                    <span class="">(Marque, se WhatsApp)</span>
+            </div>
+            <div class="form-sl">
+                <div class="form-control">
+                    <label for="email">E-mail:<span class="texto-menor"> (Obrigátorio)</span></label>
+                    <input type="email" placeholder="Digite seu e-mail" id="email" name="email">     
                 </div>
-                <div>
-                    <label for="tel-2">Telefone Alternativo: <span class="texto-menor">(Opcional)</span></label></br>
-                    <input type="tel" placeholder="Digite seu telefone" id="tel-2" name="tel-2"></br>
-                    <input type="checkbox" id="verificacao2" name="verificacao2">
-                    <span class="texto-menor">(Marque, se WhatsApp)</span>
+                <div class="form-control">
+                    <label for="password">Senha: <span class="texto-menor"> (Obrigatório)</span> </label>
+                    <input type="password" placeholder="Escolha uma senha" id="password" name="senha"required>
                 </div>
             </div>
-            <div class="form-pl">
+        </fieldset>
+        <fieldset class = "form2">
+            <legend>Endereço</legend>
+            <div class= "form-xl">
                 <div>
-                    <label for="email">E-mail:<span class="texto-menor"> (Obrigátorio)</span></label>
-                    <input type="email" placeholder="Digite seu e-mail" id="email" name="email" class="form-control">     
+                    <label for="cep">CEP:<span class="texto-menor"> (Obrigátorio)</span></label>
+                    <input  type="text" placeholder="Digite seu CEP" id="cep" name="cep" required>
+                    <a class="texto-menor" href="https://buscacepinter.correios.com.br/app/endereco/index.php" target="_blank"> Não sabe seu CEP ?</a>
                 </div>
                 <div>
-                    <label for="password">Senha: <span class="texto-menor"> (Obrigatório)</span> </label>
-                    <input type="password" placeholder="Escolha uma senha" id="password" name="senha" class="form-control" required>
+                    <label for="estado">Estado:</label>
+                    <input  type="text" placeholder="UF" id="estado" name="estado" >
+                </div>
+                <div>
+                    <label for="cidade">Cidade:</label>
+                    <input  type="text" placeholder="Cidade" id="cidade" name="cidade" >
+                </div>
+            </div>
+            <div class= "form-xl">
+                <div>
+                    <label for="endereco">Endereço:</span></label>
+                    <input  type="text" placeholder="Endereço" id="endereco" name="endereco">
+                </div>
+                <div>
+                    <label for="bairro">Bairro:</label>
+                    <input  type="text" placeholder="Bairro" id="bairro" name="bairro" >
+                </div>
+                <div>
+                    <label for="numero">Nº:</label>
+                    <input  type="text" placeholder="Número" id="numero" name="numero" >
                 </div>
             </div>
         </fieldset>
     </div>
-    <div class="mx-auto text-center">
-        <button type="submit" class="btn btn-outline-primary btn-lg">Cadastrar</button>
+    <div>
+        <button type="submit" class="btn-79"><span>Cadastrar</span></button>
     </div>
 </form>
