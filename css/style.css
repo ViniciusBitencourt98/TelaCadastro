@@ -125,12 +125,201 @@ body{
 }
 .form{
     width: 100%;
-    height: 437px;
-    background-color: red;
+    height: 100%;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 17px;
+}
+.form input{
+    border: none;
+    height: 25px;
+    border: 2px solid #8787CE; /* Custom border color */
+    border-radius: 4px; /* Rounded corners */
+    outline: none; /* Remove default outline */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 3px;
+}
+.form input:focus{
+    border-color: #5A5AB2; /* Darker border color on focus */
+    box-shadow: 0 0 5px rgba(90, 90, 178, 0.5); /* Subtle shadow on focus */
+}
+.form input:hover{
+    border-color: #6868B8;
+}
+.form span{
+    color: red;
+    font-size: 11px;
 }
 .form1{
+    width: 650px;
+    height: 250px;
+    border: 1px solid rgb(68, 68, 190);
+    border-radius: 10px;
+    font-family:'Georgia';
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+}
+.form-pl{
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+    margin: 0;
+    gap: 10px;
+    width: 100%;
+}
+.form-sl{
+    display: flex;
+    flex-direction: row;
+    height: 75px;
+    margin: 0;
+    gap: 10px;
+    width: 100%;
+    margin-top: 15px;
+}
+.form-control{
+    display: flex;
+    flex-direction: column;
+}
+.form1 input[type="text"] {
     width: 600px;
-    height: 200px;
+}
+.form1 input[type="tel"] {
+    width: 200px;
+}
+.form1 input[type="date"] {
+    width: 180px;
+}
+.form1 input[type="email"] {
+    width: 350px;
+}
+.form1 input[type="email"] {
+    width: 350px;
+}
+.form1 input[type="password"] {
+    width: 250px;
+}
+.form2{
+    width: 650px;
+    height: 190px;
+    border: 1px solid rgb(68, 68, 190);
+    border-radius: 10px;
+    font-family:'Georgia';
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.form2 a{
+    color: red;
+    font-size: 11px;
+}
+.form-xl{
+    display: flex;
+    flex-direction: row;
+    height: 75px;
+    margin: 0;
+    gap: 10px;
+    margin-top: 10px;
+}
+.form-xl div {
+    display: flex;
+    flex-direction: column;
+}
+.form2 input[name="cep"] {
+    width: 260px;
+}
+.form2 input[name="estado"] {
+    width: 110px;
+}
+.form2 input[name="cidade"] {
+    width: 210px;
+}
+.form2 input[name="endereco"] {
+    width: 310px;
+}
+.form2 input[name="bairro"] {
+    width: 200px;
+}
+.form2 input[name="numero"] {
+    width: 70px;
+}
+.btn-79,
+.btn-79 *,
+.btn-79 :after,
+.btn-79 :before,
+.btn-79:after,
+.btn-79:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-79 {
+  -webkit-tap-highlight-color: 
+transparent;
+  -webkit-appearance: button;
+  background-color: 
+#000;
+  background-image: none;
+  color: 
+#fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+}
+.btn-79:disabled {
+  cursor: default;
+}
+.btn-79:-moz-focusring {
+  outline: auto;
+}
+.btn-79 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-79 [hidden] {
+  display: none;
+}
+.btn-79 {
+  --height: 80px;
+  background: none;
+  border-radius: 999px;
+  box-sizing: border-box;
+  display: grid;
+  place-items: center;
+  height: var(--height);
+  -webkit-mask-image: none;
+  padding: 0 3rem;
+  position: relative;
+  text-transform: uppercase;
+}
+.btn-79 span {
+  font-weight: 900;
+  mix-blend-mode: difference;
+}
+.btn-79:before {
+  background: 
+#fff;
+  border-radius: 20px;
+  content: "";
+  height: calc(var(--height) / 1.7);
+  left: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: 0.2s;
+  width: calc(var(--height) / 1.7);
+}
+.btn-79:hover:before {
+  left: 0;
+  width: 100%;
 }

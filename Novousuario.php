@@ -8,64 +8,81 @@
 <form action="?page=salvar" method="POST" class="form">
     <input type="hidden" name="acao" value="cadastrar">
    <div class="form">
-    <fieldset class = "form1">
-        <legend>Dados pessoais</legend>
-    <div class="mb-3">
-       <div>
-            <label for="nome">Nome:<span class="texto-menor"> (Obrigátorio)</span></label>
-            <input type="text" placeholder="Digite seu nome completo" id="nome" name="nome" class="form-control" required>
-        </div>
-        <div class="col-md-4">    
-            <label for="data_nascimento">Data de nascimento: <span class="texto-menor"> (Obrigátorio)</span></label>
-            <input type="date" id="data_nascimento" name="data_nascimento" class="form-control" required>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-12 mb-3">
-            <div class="row g-3">
-                <div class="col-md-8">
-                    <label for="email">E-mail:</label>
-                    <input type="email" placeholder="Digite seu e-mail" id="email" name="email" class="form-control">        
+        <fieldset class = "form1">
+            <legend>Dados pessoais</legend>
+            <div class="form-pl">
+                <div class="form-control wrap-input-5">
+                    <label for="nome">Nome:<span class="texto-menor">(Obrigátorio)</span></label>
+                    <input  type="text" placeholder="Digite seu nome completo" id="nome" name="nome" required>
                 </div>
-                
             </div>
-        </div>
+            <div class="form-sl">    
+                <div class="form-control">
+                    <label for="tel-1">Telefone:</label>
+                    <input type="tel" placeholder="Digite seu telefone" id="tel-1" name="tel-1">
+                    <div>
+                        <input type="checkbox" id="verificacao1" name="verificacao1">
+                        <span class="">(Marque, se WhatsApp)</span>
+                    </div>    
+                </div>
+                <div class="form-control">
+                    <label for="tel-2">Telefone Alternativo: <span class="texto-menor">(Opcional)</span></label>
+                    <input type="tel" placeholder="Digite seu telefone" id="tel-2" name="tel-2">
+                    <div>
+                        <input type="checkbox" id="verificacao2" name="verificacao2">
+                        <span class="texto-menor">(Marque, se WhatsApp)</span>
+                    </div>
+                </div>
+                <div class="form-control">
+                    <label for="data_nascimento">Data de nascimento: <span class="texto-menor"> (Obrigátorio)</span></label>
+                    <input type="date" id="data_nascimento" name="data_nascimento" required>
+                </div>
+            </div>
+            <div class="form-sl">
+                <div class="form-control">
+                    <label for="email">E-mail:<span class="texto-menor"> (Obrigátorio)</span></label>
+                    <input type="email" placeholder="Digite seu e-mail" id="email" name="email">     
+                </div>
+                <div class="form-control">
+                    <label for="password">Senha: <span class="texto-menor"> (Obrigatório)</span> </label>
+                    <input type="password" placeholder="Escolha uma senha" id="password" name="senha"required>
+                </div>
+            </div>
+        </fieldset>
+        <fieldset class = "form2">
+            <legend>Endereço</legend>
+            <div class= "form-xl">
+                <div>
+                    <label for="cep">CEP:<span class="texto-menor"> (Obrigátorio)</span></label>
+                    <input  type="text" placeholder="Digite seu CEP" id="cep" name="cep" required>
+                    <a class="texto-menor" href="https://buscacepinter.correios.com.br/app/endereco/index.php" target="_blank"> Não sabe seu CEP ?</a>
+                </div>
+                <div>
+                    <label for="estado">Estado:</label>
+                    <input  type="text" placeholder="UF" id="estado" name="estado" >
+                </div>
+                <div>
+                    <label for="cidade">Cidade:</label>
+                    <input  type="text" placeholder="Cidade" id="cidade" name="cidade" >
+                </div>
+            </div>
+            <div class= "form-xl">
+                <div>
+                    <label for="endereco">Endereço:</span></label>
+                    <input  type="text" placeholder="Endereço" id="endereco" name="endereco">
+                </div>
+                <div>
+                    <label for="bairro">Bairro:</label>
+                    <input  type="text" placeholder="Bairro" id="bairro" name="bairro" >
+                </div>
+                <div>
+                    <label for="numero">Nº:</label>
+                    <input  type="text" placeholder="Número" id="numero" name="numero" >
+                </div>
+            </div>
+        </fieldset>
     </div>
-    <div class="row">
-    <div class="col-md-6 mb-3 g-4">
-        <label for="password">Senha: <span class="texto-menor"> (Obrigatório)</span> </label>
-        <input type="password" placeholder="Escolha uma senha" id="password" name="senha" class="form-control" required>
-    </div>
-    <div class="col-md-3 mb-3">
-    <label for="tel-1">Telefone:</label>
-    <div class="input-group">
-        <input type="tel" placeholder="Digite seu telefone" id="tel-1" name="tel-1" class="form-control">
-    </div>
-    <div class="input-group mt-2">
-        <span class="input-group-text">
-            <i class="bi bi-whatsapp"></i>
-        </span>
-        <input type="checkbox" id="verificacao1" name="verificacao1" class="form-control-checkbox ml-2 mr-2">
-        <span class="texto-menor">(Marque, se WhatsApp)</span>
-    </div>
-</div>
-<div class="col-md-3 mb-3">
-    <label for="tel-2">Telefone Alternativo: <span class="texto-menor">(Opcional)</span></label>
-    <div class="input-group">
-        <input type="tel" placeholder="Digite seu telefone" id="tel-2" name="tel-2" class="form-control">
-    </div>
-    <div class="input-group mt-2">
-        <span class="input-group-text">
-            <i class="bi bi-whatsapp"></i>
-        </span>
-        <input type="checkbox" id="verificacao2" name="verificacao2" class="form-control-checkbox ml-2 mr-2">
-        <span class="texto-menor">(Marque, se WhatsApp)</span>
-    </div>
-</div>
-</div>
-</fieldset>
-</div>
-    <div class="mx-auto text-center">
-        <button type="submit" class="btn btn-outline-primary btn-lg">Cadastrar</button>
+    <div>
+        <button type="submit" class="btn-79"><span>Cadastrar</span></button>
     </div>
 </form>
