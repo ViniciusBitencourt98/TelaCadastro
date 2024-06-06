@@ -54,7 +54,7 @@
             <div class= "form-xl">
                 <div>
                     <label for="cep">CEP:<span class="texto-menor"> (Obrigátorio)</span></label>
-                    <input  type="text" placeholder="Digite seu CEP" id="cep" name="cep" required>
+                    <input  type="text" placeholder="Digite seu CEP" id="cep" name="cep" onblur="buscaCEP(this.value)"  required>
                     <a class="texto-menor" href="https://buscacepinter.correios.com.br/app/endereco/index.php" target="_blank"> Não sabe seu CEP ?</a>
                 </div>
                 <div>
