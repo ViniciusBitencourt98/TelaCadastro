@@ -13,7 +13,7 @@
             <div class="form-pl">
                 <div class="form-control wrap-input-5">
                     <label for="nome">Nome:<span class="texto-menor">(Obrigátorio)</span></label>
-                    <input  type="text" placeholder="Digite seu nome completo" id="nome" name="nome" required>
+                    <input type="text" placeholder="Digite seu nome completo" id="nome" name="nome" required>
                 </div>
             </div>
             <div class="form-sl">    
@@ -83,6 +83,6 @@
         </fieldset>
     </div>
     <div>
-        <button type="submit" class="btn-79"><span>Cadastrar</span></button>
+        <button type="submit" class="btn-shaketext"><span>Cadastrar</span></button>
     </div>
 </form>
