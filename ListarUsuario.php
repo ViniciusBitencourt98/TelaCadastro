@@ -13,7 +13,7 @@
     $quantidade = $resultado->num_rows;
 
     if($quantidade > 0 ){
-        echo "<table class='table table-hover table-striped table-bordered container text-center'>";
+        echo "<table class='table'>";
             echo "<tr>";
             echo "<th>ID </th>";
             echo "<th>Nome </th>";
