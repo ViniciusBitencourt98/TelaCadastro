@@ -134,8 +134,8 @@ body{
 .form input{
     border: none;
     height: 25px;
-    border: 1.5px solid #8787CE; /* Custom border color */
-    border-radius: 4px; /* Rounded corners */
+    border: 1px solid #8787CE; /* Custom border color */
+    border-radius: 6px; /* Rounded corners */
     outline: none; /* Remove default outline */
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
     margin-top: 3px;
