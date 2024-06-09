@@ -298,6 +298,80 @@ body{
       transform: translate3d(2px, 0, 0) translateZ(0); }
     100% {
       transform: translate3d(0, 0, 0) translateZ(0); } }
-.table{
-    width: 600px;
-}
+      .tabela {
+        width: 80%;
+        border-collapse: collapse;
+        margin: 0 auto;
+        margin-top: 30px;  
+    }
+    
+    .tabela th, .tabela td {
+        border: 2px solid #ddd; 
+        padding: 10px;           
+        text-align: center;      
+    }
+    
+    .tabela th {
+        background-color: #f2f2f2;
+        color: rgb(68, 68, 190);              
+    }
+    
+    .tabela tr:hover {
+        background-color: #f1f1f1;
+    }
+    
+    /* Estilo dos botões */
+    .btn {
+        padding: 5px 8px;
+        margin-right: 5px;
+        border: none;
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+    }
+    .icone {
+        width: 20px; /* Defina a largura do ícone */
+        height: 20px; /* Defina a altura do ícone */
+    }
+    .botao-editar {
+        background-color: #28a745;
+        color: white;
+        border-radius: 4px;
+    }
+    
+    .botao-editar:hover {
+        background-color: #218838;
+    }
+    
+    .botao-apagar {
+        background-color: #dc3545;
+        color: white;
+        border-radius: 4px;
+    }
+    
+    .botao-apagar:hover {
+        background-color: #c82333;
+    }
+    .botao-ver{
+        background-color: #007bff;
+        color: white;
+        border-radius: 4px;
+    }
+    .botao-ver:hover{
+        background-color: #0056b3;
+        cursor: no-drop;
+    }
+    .msg {
+        color: #ff0000; 
+        background-color: #fff3f3; 
+        border: 1px solid #ffcccc; 
+        padding: 10px; 
+        border-radius: 5px;
+        font-size: 16px; 
+        text-align: center; 
+        margin: 20px auto; 
+        width: 80%; 
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    }
