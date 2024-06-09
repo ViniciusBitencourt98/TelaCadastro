@@ -13,13 +13,13 @@
             <div class="form-pl">
                 <div class="form-control wrap-input-5">
                     <label for="nome">Nome:<span class="texto-menor">(Obrigátorio)</span></label>
-                    <input type="text" placeholder="Digite seu nome completo" id="nome" name="nome" required>
+                    <input type="text" id="nome" name="nome" required>
                 </div>
             </div>
             <div class="form-sl">    
                 <div class="form-control">
                     <label for="tel-1">Telefone:</label>
-                    <input type="tel" placeholder="Digite seu telefone" id="tel-1" name="tel-1">
+                    <input type="tel" id="tel-1" name="tel-1">
                     <div>
                         <input type="checkbox" id="verificacao1" name="verificacao1">
                         <span class="">(Marque, se WhatsApp)</span>
@@ -27,7 +27,7 @@
                 </div>
                 <div class="form-control">
                     <label for="tel-2">Telefone Alternativo: <span class="texto-menor">(Opcional)</span></label>
-                    <input type="tel" placeholder="Digite seu telefone" id="tel-2" name="tel-2">
+                    <input type="tel"  id="tel-2" name="tel-2">
                     <div>
                         <input type="checkbox" id="verificacao2" name="verificacao2">
                         <span class="texto-menor">(Marque, se WhatsApp)</span>
@@ -41,11 +41,11 @@
             <div class="form-sl">
                 <div class="form-control">
                     <label for="email">E-mail:<span class="texto-menor"> (Obrigátorio)</span></label>
-                    <input type="email" placeholder="Digite seu e-mail" id="email" name="email">     
+                    <input type="email" id="email" name="email">     
                 </div>
                 <div class="form-control">
                     <label for="password">Senha: <span class="texto-menor"> (Obrigatório)</span> </label>
-                    <input type="password" placeholder="Escolha uma senha" id="password" name="senha"required>
+                    <input type="password" id="password" name="senha"required>
                 </div>
             </div>
         </fieldset>
@@ -54,30 +54,30 @@
             <div class= "form-xl">
                 <div>
                     <label for="cep">CEP:<span class="texto-menor"> (Obrigátorio)</span></label>
-                    <input  type="text" placeholder="Digite seu CEP" id="cep" name="cep" onblur="buscaCEP(this.value)"  required>
+                    <input  type="text" id="cep" name="cep" onblur="buscaCEP(this.value)"  required>
                     <a class="texto-menor" href="https://buscacepinter.correios.com.br/app/endereco/index.php" target="_blank"> Não sabe seu CEP ?</a>
                 </div>
                 <div>
                     <label for="estado">Estado:</label>
-                    <input  type="text" placeholder="UF" id="estado" name="estado" >
+                    <input  type="text"  id="estado" name="estado" >
                 </div>
                 <div>
                     <label for="cidade">Cidade:</label>
-                    <input  type="text" placeholder="Cidade" id="cidade" name="cidade" >
+                    <input  type="text"  id="cidade" name="cidade" >
                 </div>
             </div>
             <div class= "form-xl">
                 <div>
-                    <label for="endereco">Endereço:</span></label>
-                    <input  type="text" placeholder="Endereço" id="endereco" name="endereco">
+                    <label for="endereco">Rua/Logradouro:</span></label>
+                    <input  type="text" id="endereco" name="endereco">
                 </div>
                 <div>
                     <label for="bairro">Bairro:</label>
-                    <input  type="text" placeholder="Bairro" id="bairro" name="bairro" >
+                    <input  type="text"id="bairro" name="bairro" >
                 </div>
                 <div>
                     <label for="numero">Nº:</label>
-                    <input  type="text" placeholder="Número" id="numero" name="numero" >
+                    <input  type="text"  id="numero" name="numero" >
                 </div>
             </div>
         </fieldset>
