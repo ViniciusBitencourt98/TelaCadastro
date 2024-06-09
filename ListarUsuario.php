@@ -13,7 +13,7 @@
     $quantidade = $resultado->num_rows;
 
     if($quantidade > 0 ){
-        echo "<table class='table'>";
+        echo "<table class='tabela'>";
             echo "<tr>";
             echo "<th>ID </th>";
             echo "<th>Nome </th>";
@@ -29,14 +29,14 @@
             echo "<td>".$linha->data_nascimento."</td>";
             echo "<td>"."</td>";
             echo "<td >
-                    <button onclick=\"location.href='?page=editar&id=".$linha->id."';\" class='btn btn-success mr-3'> Editar </button>
-                    
-                    <button onclick=\"if(confirm('Tem certeza que deseja excluir ?')){location.href='?page=salvar&acao=excluir&id=" .$linha->id. "';}else{false;}\"class='btn btn-danger'> Excluir </button> 
+                    <button class='btn botao-ver'><img src='image/iconver.png' alt='Visualizar' class='icone'></button>
+                    <button onclick=\"location.href='?page=editar&id=".$linha->id."';\" class='btn botao-editar'><img src='image/iconeditar.png' alt='Editar' class='icone'></button>
+                    <button onclick=\"if(confirm('Tem certeza que deseja excluir ?')){location.href='?page=salvar&acao=excluir&id=" .$linha->id. "';}else{false;}\"class='btn botao-apagar'><img src='image/iconapagar.png' alt='Apagar' class='icone'></button> 
                   </td>";
             echo "</tr>";      
         }       
         echo "</table>";
     }else{
-        echo "<p class='alert alert-danger'>Não foram encontrados registros</p>";
+        echo "<p class='msg'>Não foram encontrados registros</p>";
     }
 ?>
