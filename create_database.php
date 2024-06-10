@@ -27,14 +27,31 @@ $conn->select_db($database);
 // Cria uma tabela de exemplo
 $sql = "CREATE TABLE IF NOT EXISTS usuarios (
     id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-    nome VARCHAR(50) NOT NULL,
-    email VARCHAR(50) NOT NULL,
-    senha VARCHAR(50) NOT NULL,
+    nome VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    senha VARCHAR(255) NOT NULL,
+    telefone VARCHAR(20),
+    verificacao TINYINT(1),
+    telefone_alternativo VARCHAR(20),
+    verificacao2 TINYINT(1),
+    cep VARCHAR(10),
+    estado CHAR(2),
+    cidade VARCHAR(100),
+    rua VARCHAR(255),
+    bairro VARCHAR(100),
+    numero VARCHAR(10),
+    data_nascimento DATE,
     data_registro TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 )";
 
 if ($conn->query($sql) === TRUE) {
     echo "Tabela 'usuarios' criada com sucesso<br>";
+    // Redirecionar para index.php após 5 segundos
+    echo "<script>
+            setTimeout(function() {
+                window.location.href = 'index.php';
+            }, 5000); // 5000 milissegundos = 5 segundos
+          </script>";
 } else {
     echo "Erro ao criar tabela: " . $conn->error;
 }
