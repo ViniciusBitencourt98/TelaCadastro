@@ -6,8 +6,18 @@
             $data_nascimento = $_POST["data_nascimento"];
             $email = $_POST["email"];
             $senha = $_POST["senha"];
+            $tel1 = $_POST["tel1"];
+            $verificacao1 = isset($_POST["verificacao1"]) ? 1 : 0;
+            $tel2 = $_POST["tel2"];
+            $verificacao2 = isset($_POST["verificacao2"]) ? 1 : 0;
+            $cep = $_POST["cep"];
+            $estado = $_POST["estado"];
+            $cidade = $_POST["cidade"]; 
+            $endereco = $_POST["endereco"];
+            $bairro = $_POST["bairro"]; 
+            $numero = $_POST["numero"];
 
-            $inserir_banco = "INSERT INTO usuarios (nome, email, senha, data_nascimento) VALUES ('{$nome}', '{$email}', '{$senha}', '{$data_nascimento}')"; 
+            $inserir_banco = "INSERT INTO usuarios (nome, data_nascimento, email, senha, telefone, verificacao, telefone_alternativo, verificacao2, cep, estado, cidade, rua, bairro, numero) VALUES ('$nome', '$data_nascimento', '$email', '$senha', '$tel1', $verificacao1, '$tel2', $verificacao2, '$cep', '$estado', '$cidade', '$endereco', '$bairro', '$numero')"; 
 
             $res = $config_banco->query($inserir_banco);
 

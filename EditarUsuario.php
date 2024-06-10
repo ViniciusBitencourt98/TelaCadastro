@@ -26,18 +26,18 @@
             </div>
             <div class="form-sl">    
                 <div class="form-control">
-                    <label for="tel-1">Telefone:</label>
-                    <input type="tel" id="tel-1" name="tel-1">
+                    <label for="tel1">Telefone:</label>
+                    <input type="tel" id="tel1" name="tel1" value = "<?php echo $linha->telefone; ?>">
                     <div>
-                        <input type="checkbox" id="verificacao1" name="verificacao1">
+                        <input type="checkbox" id="verificacao1" name="verificacao1" value = "<?php echo $linha->verificacao; ?>">
                         <span class="">(Marque, se WhatsApp)</span>
                     </div>    
                 </div>
                 <div class="form-control">
-                    <label for="tel-2">Telefone Alternativo: <span class="texto-menor">(Opcional)</span></label>
-                    <input type="tel"  id="tel-2" name="tel-2">
+                    <label for="tel2">Telefone Alternativo: <span class="texto-menor">(Opcional)</span></label>
+                    <input type="tel"  id="tel2" name="tel2" value = "<?php echo $linha->telefone_alternativo; ?>">
                     <div>
-                        <input type="checkbox" id="verificacao2" name="verificacao2">
+                        <input type="checkbox" id="verificacao2" name="verificacao2" value = "<?php echo $linha->verificacao2; ?>">
                         <span class="texto-menor">(Marque, se WhatsApp)</span>
                     </div>
                 </div>
@@ -62,30 +62,30 @@
             <div class= "form-xl">
                 <div>
                     <label for="cep">CEP:<span class="texto-menor"> (Obrigátorio)</span></label>
-                    <input  type="text" id="cep" name="cep" onblur="buscaCEP(this.value)"  required>
+                    <input  type="text" id="cep" name="cep" onblur="buscaCEP(this.value)" value= "<?php echo $linha->cep; ?>"  required>
                     <a class="texto-menor" href="https://buscacepinter.correios.com.br/app/endereco/index.php" target="_blank"> Não sabe seu CEP ?</a>
                 </div>
                 <div>
                     <label for="estado">Estado:</label>
-                    <input  type="text"  id="estado" name="estado" >
+                    <input  type="text"  id="estado" name="estado" value= "<?php echo $linha->estado; ?>">
                 </div>
                 <div>
                     <label for="cidade">Cidade:</label>
-                    <input  type="text"  id="cidade" name="cidade" >
+                    <input  type="text"  id="cidade" name="cidade" value= "<?php echo $linha->cidade; ?>">
                 </div>
             </div>
             <div class= "form-xl">
                 <div>
                     <label for="endereco">Rua/Logradouro:</span></label>
-                    <input  type="text" id="endereco" name="endereco">
+                    <input  type="text" id="endereco" name="endereco" value= "<?php echo $linha->rua; ?>">
                 </div>
                 <div>
                     <label for="bairro">Bairro:</label>
-                    <input  type="text"id="bairro" name="bairro" >
+                    <input  type="text"id="bairro" name="bairro" value= "<?php echo $linha->bairro; ?>">
                 </div>
                 <div>
                     <label for="numero">Nº:</label>
-                    <input  type="text"  id="numero" name="numero" >
+                    <input  type="text"  id="numero" name="numero" value= "<?php echo $linha->numero; ?>">
                 </div>
             </div>
         </fieldset>

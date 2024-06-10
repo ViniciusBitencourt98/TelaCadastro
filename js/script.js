@@ -1,7 +1,7 @@
 $(document).ready(function() {
     $('#cep').mask('00000-000');
-    $('#tel-1').mask('(00) 00000-0000');
-    $('#tel-2').mask('(00) 00000-0000');
+    $('#tel1').mask('(00) 00000-0000');
+    $('#tel2').mask('(00) 00000-0000');
     
     document.getElementById('cep').addEventListener('input', function () {
         const cep = this.value.replace(/\D/g, ''); // Remove non-digit characters

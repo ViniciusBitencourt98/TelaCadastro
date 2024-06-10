@@ -18,18 +18,18 @@
             </div>
             <div class="form-sl">    
                 <div class="form-control">
-                    <label for="tel-1">Telefone:</label>
-                    <input type="tel" id="tel-1" name="tel-1">
+                    <label for="tel1">Telefone:</label>
+                    <input type="tel" id="tel1" name="tel1">
                     <div>
-                        <input type="checkbox" id="verificacao1" name="verificacao1">
+                        <input type="checkbox" id="verificacao1" name="verificacao1" value="1">
                         <span class="">(Marque, se WhatsApp)</span>
                     </div>    
                 </div>
                 <div class="form-control">
-                    <label for="tel-2">Telefone Alternativo: <span class="texto-menor">(Opcional)</span></label>
-                    <input type="tel"  id="tel-2" name="tel-2">
+                    <label for="tel2">Telefone Alternativo: <span class="texto-menor">(Opcional)</span></label>
+                    <input type="tel"  id="tel2" name="tel2">
                     <div>
-                        <input type="checkbox" id="verificacao2" name="verificacao2">
+                        <input type="checkbox" id="verificacao2" name="verificacao2" value="1">
                         <span class="texto-menor">(Marque, se WhatsApp)</span>
                     </div>
                 </div>

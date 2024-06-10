@@ -27,7 +27,7 @@
             echo "<td>".$linha->nome."</td>";
             echo "<td>".$linha->email."</td>";
             echo "<td>".$linha->data_nascimento."</td>";
-            echo "<td>"."</td>";
+            echo "<td>".$linha->telefone; if(isset($linha->telefone_alternativo)){echo "</br>$linha->telefone_alternativo";}"</td>";
             echo "<td >
                     <button class='btn botao-ver'><img src='image/iconver.png' alt='Visualizar' class='icone'></button>
                     <button onclick=\"location.href='?page=editar&id=".$linha->id."';\" class='btn botao-editar'><img src='image/iconeditar.png' alt='Editar' class='icone'></button>
