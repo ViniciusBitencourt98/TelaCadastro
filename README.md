@@ -59,7 +59,8 @@ O objetivo deste projeto é demonstrar um sistema básico de gerenciamento de us
     ![image](https://github.com/ViniciusBitencourt98/TelaCadastro/assets/93064287/d1766ff1-8ea2-4622-a64d-075788016ae4)
 
   - O endereço é preenchido automaticamente ao informar o CEP.
-  ![Cadastro-Google-Chrome-2024-06-10-16-48-00](https://github.com/ViniciusBitencourt98/TelaCadastro/assets/93064287/e6ffcf2b-7fda-450f-8907-2b00c5160198)
+  ![Cadastro-Google-Chrome-2024-06-10-16-57-58](https://github.com/ViniciusBitencourt98/TelaCadastro/assets/93064287/3a538c19-7327-4fe7-ae60-9fa274091b22)
+
 
 
 - **Listagem de Usuários:**
