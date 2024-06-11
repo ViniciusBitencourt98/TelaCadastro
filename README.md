@@ -33,12 +33,12 @@ O objetivo deste projeto é demonstrar um sistema básico de gerenciamento de us
 
 1. Clone este repositório para o seu diretório de projetos:
     ```sh
-    git clone https://github.com/seu-usuario/nome-do-repositorio.git
+    git clone https://github.com/ViniciusBitencourt98/TelaCadastro.git
     ```
 
 2. Navegue até o diretório do projeto:
     ```sh
-    cd nome-do-repositorio
+    cd nome-do-repositorio [Este é o nome da pasta ou diretório onde o seu projeto foi clonado ou armazenado.]
     ```
 3. Inicie o servidor Apache e MySQL pelo XAMPP.
 
@@ -49,7 +49,7 @@ O objetivo deste projeto é demonstrar um sistema básico de gerenciamento de us
 
 5. Acesse o projeto pelo navegador:
     ```sh
-    http://localhost/nome-do-repositorio
+    http://localhost/index.php
     ```
 
 ## Funcionalidades
