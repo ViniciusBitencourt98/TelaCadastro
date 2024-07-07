@@ -35,7 +35,7 @@
                         if (!empty($linha->telefone_alternativo)) {
                             echo "<br>".$linha->telefone_alternativo;
                             if ($linha->verificacao2 == 1) {
-                                echo " <img src='imagens/whatsapp.png' alt='WhatsApp' class='icone'>";
+                                echo " <img src='image/iconewpp.png' alt='WhatsApp' class='icone'>";
                             }
                         }
                         echo "</td>";

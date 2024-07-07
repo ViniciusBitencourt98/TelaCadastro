@@ -33,15 +33,26 @@
             $nome = $_POST["nome"];
             $data_nascimento = $_POST["data_nascimento"];
             $email = $_POST["email"];
+            $senha = $_POST["senha"];
+            $tel1 = $_POST["tel1"];
+            $verificacao1 = isset($_POST["verificacao1"]) ? 1 : 0;
+            $tel2 = $_POST["tel2"];
+            $verificacao2 = isset($_POST["verificacao2"]) ? 1 : 0;
+            $cep = $_POST["cep"];
+            $estado = $_POST["estado"];
+            $cidade = $_POST["cidade"]; 
+            $endereco = $_POST["endereco"];
+            $bairro = $_POST["bairro"]; 
+            $numero = $_POST["numero"];
             
-            $inserir_banco = "UPDATE usuarios SET nome ='{$nome}', data_nascimento = '{$data_nascimento}', email = '{$email}' WHERE id = ".$_REQUEST["id"];
+            $inserir_banco = "UPDATE usuarios SET nome ='{$nome}', data_nascimento = '{$data_nascimento}', email = '{$email}', senha = '{$senha}', telefone = '{$tel1}', verificacao = '{$verificacao1}', telefone_alternativo = '{$tel2}', verificacao2 = '{$verificacao2}', cep = '{$cep}', estado = '{$estado}', cidade = '{$cidade}', rua = '{$endereco}', bairro = '{$bairro}', numero = '{$numero}'  WHERE id = ".$_REQUEST["id"];
 
             $res = $config_banco->query($inserir_banco);
             if($res==true){                
                 echo "<script>alert('Alteração realizada com sucesso.');</script>";
                 echo "<script>location.href='?page=listar';</script>";
             }else{
-                echo "<script> alert('Não foi possivel alterar, tente novamente.')";
+                echo "<script> alert('Não foi possivel alterar, tente novamente.')</script>";
                 echo "<script> location.href='?page=listar';</script>";
             }
         break;
