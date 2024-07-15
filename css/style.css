@@ -164,7 +164,7 @@ body{
     text-align: center;
     transition: color 0.3s ease; /* Adicionei transição de cor */
 }
-.form {
+.form{
     width: 100%;
     height: 100%;
     display: flex;
@@ -172,47 +172,37 @@ body{
     flex-direction: column;
     font-size: 17px;
 }
-
-.form input {
+.form input{
     border: none;
     height: 25px;
-    border: 1px solid #8787CE;
-    border-radius: 6px;
-    outline: none;
+    border: 1px solid #8787CE; /* Custom border color */
+    border-radius: 8px; /* Rounded corners */
+    outline: none; /* Remove default outline */
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
     margin-top: 3px;
-    padding: 5px;
 }
-
-.form input:focus {
-    border-color: #5A5AB2;
-    box-shadow: 0 0 5px rgba(90, 90, 178, 0.5);
+.form input:focus{
+    border-color: #5A5AB2; /* Darker border color on focus */
+    box-shadow: 0 0 5px rgba(90, 90, 178, 0.5); /* Subtle shadow on focus */
 }
-
-.form input:hover {
+.form input:hover{
     border-color: #6868B8;
 }
-
-.form span {
+.form span{
     color: red;
     font-size: 11px;
 }
-
-.form1 {
+.form1{
     width: 650px;
     height: 250px;
     border: 2px solid rgb(68, 68, 190);
     border-radius: 15px;
-    font-family: 'Georgia', serif;
+    font-family:'Georgia';
     display: flex;
     flex-direction: column;
     font-size: 15px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: #f9f9f9;
 }
-
-.form-pl {
+.form-pl{
     display: flex;
     flex-direction: row;
     height: 60px;
@@ -220,8 +210,7 @@ body{
     gap: 10px;
     width: 100%;
 }
-
-.form-sl {
+.form-sl{
     display: flex;
     flex-direction: row;
     height: 75px;
@@ -230,54 +219,45 @@ body{
     width: 100%;
     margin-top: 15px;
 }
-
-.form-control {
+.form-control{
     display: flex;
     flex-direction: column;
 }
-
 .form1 input[type="text"] {
     width: 600px;
 }
-
 .form1 input[type="tel"] {
     width: 200px;
 }
-
 .form1 input[type="date"] {
     width: 180px;
 }
-
 .form1 input[type="email"] {
     width: 350px;
 }
-
+.form1 input[type="email"] {
+    width: 350px;
+}
 .form1 input[type="password"] {
     width: 250px;
 }
-
-.form2 {
+.form2{
     width: 650px;
     height: 190px;
     border: 2px solid rgb(68, 68, 190);
     border-radius: 15px;
-    font-family: 'Georgia', serif;
+    font-family:'Georgia';
     display: flex;
     flex-direction: column;
     font-size: 15px;
     margin-top: 10px;
     margin-bottom: 15px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: #f9f9f9;
 }
-
-.form2 a {
+.form2 a{
     color: red;
     font-size: 11px;
 }
-
-.form-xl {
+.form-xl{
     display: flex;
     flex-direction: row;
     height: 75px;
@@ -285,36 +265,28 @@ body{
     gap: 10px;
     margin-top: 10px;
 }
-
 .form-xl div {
     display: flex;
     flex-direction: column;
 }
-
 .form2 input[name="cep"] {
     width: 260px;
 }
-
 .form2 input[name="estado"] {
     width: 110px;
 }
-
 .form2 input[name="cidade"] {
     width: 210px;
 }
-
 .form2 input[name="endereco"] {
     width: 310px;
 }
-
 .form2 input[name="bairro"] {
     width: 200px;
 }
-
 .form2 input[name="numero"] {
     width: 70px;
 }
-
 .btn-shaketext {
     position: relative;
     outline: none;
@@ -328,142 +300,119 @@ body{
     height: 30px;
     width: 250px;
     opacity: 1;
-    background-color: #ffffff;
-    border: 1px solid rgba(22, 76, 167, 0.6);
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.btn-shaketext span {
-    color: #164ca7;
-    font-size: 12px;
-    font-weight: 500;
-    letter-spacing: 0.7px;
-}
-
-.btn-shaketext:hover {
-    animation: rotate 0.7s ease-in-out both;
-}
-
-.btn-shaketext:hover span {
-    animation: storm 0.7s ease-in-out both;
-    animation-delay: 0.06s;
-}
-
-@keyframes rotate {
+    background-color: 
+  #ffffff;
+    border: 1px solid 
+  rgba(22, 76, 167, 0.6); }
+    .btn-shaketext span {
+      color: 
+  #164ca7;
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.7px; }
+    .btn-shaketext:hover {
+      animation: rotate 0.7s ease-in-out both; }
+      .btn-shaketext:hover span {
+        animation: storm 0.7s ease-in-out both;
+        animation-delay: 0.06s; }
+  
+  @keyframes rotate {
     0% {
-        transform: rotate(0deg) translate3d(0, 0, 0);
-    }
+      transform: rotate(0deg) translate3d(0, 0, 0); }
     25% {
-        transform: rotate(3deg) translate3d(0, 0, 0);
-    }
+      transform: rotate(3deg) translate3d(0, 0, 0); }
     50% {
-        transform: rotate(-3deg) translate3d(0, 0, 0);
-    }
+      transform: rotate(-3deg) translate3d(0, 0, 0); }
     75% {
-        transform: rotate(1deg) translate3d(0, 0, 0);
-    }
+      transform: rotate(1deg) translate3d(0, 0, 0); }
     100% {
-        transform: rotate(0deg) translate3d(0, 0, 0);
-    }
-}
-
-@keyframes storm {
+      transform: rotate(0deg) translate3d(0, 0, 0); } }
+  
+  @keyframes storm {
     0% {
-        transform: translate3d(0, 0, 0) translateZ(0);
-    }
+      transform: translate3d(0, 0, 0) translateZ(0); }
     25% {
-        transform: translate3d(4px, 0, 0) translateZ(0);
-    }
+      transform: translate3d(4px, 0, 0) translateZ(0); }
     50% {
-        transform: translate3d(-3px, 0, 0) translateZ(0);
-    }
+      transform: translate3d(-3px, 0, 0) translateZ(0); }
     75% {
-        transform: translate3d(2px, 0, 0) translateZ(0);
-    }
+      transform: translate3d(2px, 0, 0) translateZ(0); }
     100% {
-        transform: translate3d(0, 0, 0) translateZ(0);
+      transform: translate3d(0, 0, 0) translateZ(0); } }
+      .tabela {
+        width: 80%;
+        border-collapse: collapse;
+        margin: 0 auto;
+        margin-top: 30px;  
     }
-}
-
-.tabela {
-    width: 80%;
-    border-collapse: collapse;
-    margin: 0 auto;
-    margin-top: 30px;
-}
-
-.tabela th, .tabela td {
-    border: 2px solid #ddd;
-    padding: 10px;
-    text-align: center;
-}
-
-.tabela th {
-    background-color: #f2f2f2;
-    color: rgb(68, 68, 190);
-}
-
-.tabela tr:hover {
-    background-color: #f1f1f1;
-}
-
-.btn {
-    padding: 5px 8px;
-    margin-right: 5px;
-    border: none;
-    cursor: pointer;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    background-color: transparent;
-}
-
-.icone {
-    width: 20px;
-    height: 20px;
-}
-
-.botao-editar {
-    background-color: #28a745;
-    color: white;
-    border-radius: 4px;
-}
-
-.botao-editar:hover {
-    background-color: #218838;
-}
-
-.botao-apagar {
-    background-color: #dc3545;
-    color: white;
-    border-radius: 4px;
-}
-
-.botao-apagar:hover {
-    background-color: #c82333;
-}
-
-.botao-ver {
-    background-color: #007bff;
-    color: white;
-    border-radius: 4px;
-}
-
-.botao-ver:hover {
-    background-color: #0056b3;
-    cursor: no-drop;
-}
-
-.msg {
-    color: #ff0000;
-    background-color: #fff3f3;
-    border: 1px solid #ffcccc;
-    padding: 10px;
-    border-radius: 5px;
-    font-size: 16px;
-    text-align: center;
-    margin: 20px auto;
-    width: 80%;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
+    
+    .tabela th, .tabela td {
+        border: 2px solid #ddd; 
+        padding: 10px;           
+        text-align: center;      
+    }
+    
+    .tabela th {
+        background-color: #f2f2f2;
+        color: rgb(68, 68, 190);              
+    }
+    
+    .tabela tr:hover {
+        background-color: #f1f1f1;
+    }
+    
+    /* Estilo dos botões */
+    .btn {
+        padding: 5px 8px;
+        margin-right: 5px;
+        border: none;
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+    }
+    .icone {
+        width: 20px; /* Defina a largura do ícone */
+        height: 20px; /* Defina a altura do ícone */
+    }
+    .botao-editar {
+        background-color: #28a745;
+        color: white;
+        border-radius: 4px;
+    }
+    
+    .botao-editar:hover {
+        background-color: #218838;
+    }
+    
+    .botao-apagar {
+        background-color: #dc3545;
+        color: white;
+        border-radius: 4px;
+    }
+    
+    .botao-apagar:hover {
+        background-color: #c82333;
+    }
+    .botao-ver{
+        background-color: #007bff;
+        color: white;
+        border-radius: 4px;
+    }
+    .botao-ver:hover{
+        background-color: #0056b3;
+        cursor: no-drop;
+    }
+    .msg {
+        color: #ff0000; 
+        background-color: #fff3f3; 
+        border: 1px solid #ffcccc; 
+        padding: 10px; 
+        border-radius: 5px;
+        font-size: 16px; 
+        text-align: center; 
+        margin: 20px auto; 
+        width: 80%; 
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    }
