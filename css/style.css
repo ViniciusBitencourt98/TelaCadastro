@@ -402,7 +402,6 @@ body{
     }
     .botao-ver:hover{
         background-color: #0056b3;
-        cursor: no-drop;
     }
     .msg {
         color: #ff0000; 

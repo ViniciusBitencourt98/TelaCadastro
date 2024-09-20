@@ -40,7 +40,7 @@
                         }
                         echo "</td>";
             echo "<td >
-                    <button class='btn botao-ver'><img src='image/iconver.png' alt='Visualizar' class='icone'></button>
+                    <button class='btn botao-ver' onclick= abrirModal(".$linha->id.")><img src='image/iconver.png' alt='Visualizar' class='icone'></button>
                     <button onclick=\"location.href='?page=editar&id=".$linha->id."';\" class='btn botao-editar'><img src='image/iconeditar.png' alt='Editar' class='icone'></button>
                     <button onclick=\"if(confirm('Tem certeza que deseja excluir ?')){location.href='?page=salvar&acao=excluir&id=" .$linha->id. "';}else{false;}\"class='btn botao-apagar'><img src='image/iconapagar.png' alt='Apagar' class='icone'></button> 
                   </td>";

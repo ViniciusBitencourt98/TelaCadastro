@@ -39,3 +39,16 @@ async function buscaCEP(cep) {
         alert('Erro ao buscar o CEP');
     } }
 }
+//Função para abir o modal
+function abrirModal(id) {
+    // Fazer uma requisição AJAX para buscar o conteúdo do modal
+    fetch('modals/ModalUser.php')
+        .then(response => response.text())
+        .then(data => {
+            // Inserir o conteúdo do modal em um elemento
+            document.getElementById('modal-container').innerHTML = data;
+
+            // Exibir o modal (assumindo que você está usando Bootstrap)
+            $('#myModal').modal('show');
+        });
+}
