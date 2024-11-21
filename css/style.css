@@ -3,6 +3,7 @@ body{
     background-color: #E6E6FA;
     font-family: arial;
     background-image: radial-gradient(circle at center center, transparent,rgb(255,255,255)),linear-gradient(309deg, rgba(90, 90, 90,0.05) 0%, rgba(90, 90, 90,0.05) 50%,rgba(206, 206, 206,0.05) 50%, rgba(206, 206, 206,0.05) 100%),linear-gradient(39deg, rgba(13, 13, 13,0.05) 0%, rgba(13, 13, 13,0.05) 50%,rgba(189, 189, 189,0.05) 50%, rgba(189, 189, 189,0.05) 100%),linear-gradient(144deg, rgba(249, 249, 249,0.05) 0%, rgba(249, 249, 249,0.05) 50%,rgba(111, 111, 111,0.05) 50%, rgba(111, 111, 111,0.05) 100%),linear-gradient(166deg, rgba(231, 231, 231,0.05) 0%, rgba(231, 231, 231,0.05) 50%,rgba(220, 220, 220,0.05) 50%, rgba(220, 220, 220,0.05) 100%),linear-gradient(212deg, rgba(80, 80, 80,0.05) 0%, rgba(80, 80, 80,0.05) 50%,rgba(243, 243, 243,0.05) 50%, rgba(243, 243, 243,0.05) 100%),radial-gradient(circle at center center, hsl(107,19%,100%),hsl(107,19%,100%)); 
+    overflow: hidden;
 }
 .navbar {
     display: flex;
@@ -416,3 +417,35 @@ body{
         width: 80%; 
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
     }
+    .container-login{
+        display: flex;
+        flex-direction: row;
+        overflow: hidden;
+    }
+    .container-nome{
+        width: 963px;
+        height: 700px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .container-login{
+        height: 740px;
+    }
+    @import url('https://fonts.googleapis.com/css2?family=MerriweatherSans&display=swap');
+    .container-nome-principal{
+        font-size: 150px;
+        font-family: Merriweather Sans;
+        flex-wrap: nowrap;
+        font-weight: 600;
+        text-align: center;
+    }
+    .container-nome-secundario{
+        font-size: 38px;
+        font-family: Merriweather Sans;
+        flex-wrap: nowrap;
+        font-weight: 600;
+        text-align: center;
+    }
+
