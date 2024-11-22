@@ -430,8 +430,13 @@ body{
         justify-content: center;
         align-items: center;
     }
-    .container-login{
+    .container-login-input{
         height: 740px;
+        width: 480px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
     }
     @import url('https://fonts.googleapis.com/css2?family=MerriweatherSans&display=swap');
     .container-nome-principal{
@@ -447,5 +452,17 @@ body{
         flex-wrap: nowrap;
         font-weight: 600;
         text-align: center;
+    }
+    .container-login-gif{
+        background-image: url(../image/giflogin.gif);
+        background-repeat: no-repeat;
+        width: 400px;
+        height: 290px;
+    }
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+    .container-nome-bemvindo{
+        font-family: Montserrat;
+        font-size: 38px;
+        font-weight: 600;
     }
 
