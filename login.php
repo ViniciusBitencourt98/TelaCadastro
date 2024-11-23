@@ -10,6 +10,13 @@
             <div class="container-nome-bemvindo">Bem vindo !</div>
             <div>SDCP - Sistema de cadastro de pessoas</div>
         </div>
-        <div>c</div>
+        <div class="container-input">
+            <form action="?page=salvar">
+                <input type="text" required>
+                <input type="password" required>
+                <a href="">Esqueci a senha</a>
+                <button type="submit" class="">Cadastrar</button>
+            </form>
+        </div>
     </div>
 </div>

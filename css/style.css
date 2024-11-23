@@ -437,6 +437,7 @@ body{
         flex-direction: column;
         align-items: center;
         gap: 20px;
+        background-color: #E5E6E9;
     }
     @import url('https://fonts.googleapis.com/css2?family=MerriweatherSans&display=swap');
     .container-nome-principal{
@@ -464,5 +465,17 @@ body{
         font-family: Montserrat;
         font-size: 38px;
         font-weight: 600;
+    }
+    .container-bemvindo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .container-input form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
