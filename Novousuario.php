@@ -1,3 +1,15 @@
+<?php 
+ if (isset($_SESSION['logado']) && $_SESSION['logado'] == '1') {
+    echo "<script>
+              alert('É necessário logar no sistema.');
+              window.location.href='TelaCadastro/index.php?page=login   ';
+            </script>";
+ }else{
+    echo "<script>
+              alert('É necessário logar no sistema.');
+              window.location.href='/index.php?page=login';
+            </script>";
+ } ?>
 <div class= "titulo-page">
     <div class = "titulo-page-logo">
     <a href="?page=index.php">Home</br><img src="image/botao-home.png" alt="Icone de ir para home"></a>

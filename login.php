@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="css/style.css">
+<?php $menu = 0; ?>
 <div class="container-login">
     <div class="container-nome">
         <div class="container-nome-principal">SDCP</div>
@@ -12,8 +12,14 @@
         </div>
         <div class="container-input">
             <form action="?page=salvar">
-                <input type="text" required>
-                <input type="password" required>
+                <div>
+                    <label for="user">Usuário:</label>
+                    <input type="text" name="user" required>
+                </div>
+                <div>
+                    <label for="senha">Senha:</label>
+                    <input type="password" name="senha" required>
+                </div>
                 <a href="">Esqueci a senha</a>
                 <button type="submit" class="">Cadastrar</button>
             </form>
