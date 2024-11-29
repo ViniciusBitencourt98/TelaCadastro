@@ -442,14 +442,14 @@ body{
     @import url('https://fonts.googleapis.com/css2?family=MerriweatherSans&display=swap');
     .container-nome-principal{
         font-size: 150px;
-        font-family: Merriweather Sans;
+        font-family: Montserrat;
         flex-wrap: nowrap;
         font-weight: 600;
         text-align: center;
     }
     .container-nome-secundario{
         font-size: 38px;
-        font-family: Merriweather Sans;
+        font-family: Montserrat;
         flex-wrap: nowrap;
         font-weight: 600;
         text-align: center;
@@ -463,7 +463,7 @@ body{
     @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
     .container-nome-bemvindo{
         font-family: Montserrat;
-        font-size: 38px;
+        font-size: 40px;
         font-weight: 600;
     }
     .container-bemvindo{
@@ -471,11 +471,47 @@ body{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        font-family: Montserrat;
+        font-weight: 500;
     }
     .container-input form{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        gap: 20px;
+    }
+    .div-input{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 350px;
+        height: 80px;
+        font-family: inter; 
+        font-weight: 400;
+        font-size: 18px;
+        color: #000;
+    }
+    .div-input input{
+        height: 30px;
+        border-radius: 5px;
+        font-family: inter; 
+        font-weight: 400;
+        font-size: 14px;
+        padding-left: 10px;
+    }
+    .container-input a{
+        text-decoration: none;
+        font-family: Inter;
+        font-size: 16px;
+        color: #000;
+    }
+    .submit{
+        width: 350px;
+        height: 80px;
+        border-radius: 10px;
+        font-size: 20px;
+        font-family: Montserrat;
+        font-weight: 600;
     }
 

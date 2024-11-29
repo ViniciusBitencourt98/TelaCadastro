@@ -11,17 +11,17 @@
             <div>SDCP - Sistema de cadastro de pessoas</div>
         </div>
         <div class="container-input">
-            <form action="?page=salvar">
-                <div>
+            <form action="?page=salvar" method="POST">
+                <div class="div-input">
                     <label for="user">Usuário:</label>
-                    <input type="text" name="user" required>
+                    <input type="text" name="user" placeholder="Digite o nome do usuário" required>
                 </div>
-                <div>
+                <div class="div-input">
                     <label for="senha">Senha:</label>
-                    <input type="password" name="senha" required>
+                    <input type="password" name="senha" placeholder="Digite a senha" required>
                 </div>
                 <a href="">Esqueci a senha</a>
-                <button type="submit" class="">Cadastrar</button>
+                <button type="submit" class="submit">Entrar</button>
             </form>
         </div>
     </div>
