@@ -12,6 +12,7 @@
         </div>
         <div class="container-input">
             <form action="?page=salvar" method="POST">
+            <input type="hidden" name="acao" value="logar">
                 <div class="div-input">
                     <label for="user">Usuário:</label>
                     <input type="text" name="user" placeholder="Digite o nome do usuário" required>

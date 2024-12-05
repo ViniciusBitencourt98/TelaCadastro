@@ -424,11 +424,12 @@ body{
     }
     .container-nome{
         width: 963px;
-        height: 700px;
+        height: 740px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        background-color: #4F6CB4;
     }
     .container-login-input{
         height: 740px;

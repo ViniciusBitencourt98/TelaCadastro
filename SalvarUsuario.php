@@ -1,6 +1,5 @@
 <?php
-    switch($_REQUEST["acao"])
-    {
+    switch($_REQUEST["acao"]) {
         case 'cadastrar':
             $nome = $_POST["nome"];
             $data_nascimento = $_POST["data_nascimento"];
@@ -60,6 +59,20 @@
             $sql = "DELETE FROM usuarios WHERE id=".$_REQUEST["id"]; 
 
             $res = $config_banco->query($sql);
+
+            if($res==true){                
+                echo "<script>alert('Exclusão realizada com sucesso.');</script>";
+                echo "<script>location.href='?page=listar';</script>";
+            }else{
+                echo "<script> alert('Não foi possivel alterar, tente novamente.')";
+                echo "<script> location.href='?page=listar';</script>";
+            }
+
+
+        break;
+        case 'logar':
+            var_dump($_POST);
+            die;
 
             if($res==true){                
                 echo "<script>alert('Exclusão realizada com sucesso.');</script>";
