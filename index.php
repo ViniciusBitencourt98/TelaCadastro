@@ -23,9 +23,16 @@
   include("config.php");
 
   // Verifica se o usuário está logado
-  if (isset($_SESSION['logado']) && $_SESSION['logado'] == '1') {
+  session_start();
+  if(isset($_REQUEST["acao"])){
+    $_SESSION['logando'] = 1;
+  } else{
+    $_SESSION['logado'] = 0;
+  }
+  if (isset($_SESSION['logando'])) {
+    if($_SESSION['logado'] == 1)
     // Define a página atual ou usa "home" como padrão
-    $page = isset($_REQUEST["page"]) ? $_REQUEST["page"] : "home";
+    $page = isset($_REQUEST["page"]) ? $_REQUEST["page"] : "login";
 
     switch ($page) {
       case "novo":
@@ -42,7 +49,7 @@
         break;
       case "home":
       default:
-        include("home.php");
+        include("login.php");
         break;
     }
   } else {
